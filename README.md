@@ -37,6 +37,31 @@ pycaw: For controlling the system volume on Windows.
 Other audio processing libraries: Such as librosa, pydub, or scipy for implementing audio effects.
 Implemented using MediaPipe for hand tracking and OpenCV for image processing.
 
+# Dependencies:
+To run this code, you need to install the following Python libraries:
+
+# bash
+pip install opencv-python mediapipe numpy pycaw
+
+## How to Run:
+Save the code in a file named wirelessVolumeControl.py.
+
+# Run the script using Python:
+pip install opencv-python mediapipe numpy pycaw
+# bash command to run the code
+python wirelessVolumeControl.py
+
+Use your hand gestures (thumb and index finger) to control the system volume.
+
+Press q to exit the program.
+
+## Notes:
+This code is designed for Windows systems due to the use of pycaw.
+
+Ensure that your camera is properly connected and accessible by OpenCV.
+
+The volume control is based on the distance between the thumb and index finger, with a range of 50 to 300 pixels mapped to the system volume range.
+
 # Audio Transcoding and Compression:
 
 Supports .wav files and provides transcoding and compression options.
